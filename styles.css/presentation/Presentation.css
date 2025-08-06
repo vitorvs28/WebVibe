@@ -1,0 +1,194 @@
+/* Container da apresentação */
+.container-apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    background-color: var(--cor-fundo);
+}
+
+/* Área do conteúdo textual e botão */
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+/* Texto da apresentação */
+.texto-apresentacao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.6rem;
+}
+
+/* Estilização do título */
+.texto-apresentacao h1 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.5;
+    color: var(--cor-font-primaria);
+    font-family: var(--font-secundaria);
+    opacity: 0; /* inicia invisível */
+}
+
+/* Estilização do parágrafo */
+.texto-apresentacao p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--cor-font-primaria);
+    opacity: 0;
+}
+ .bnt-computer {
+        opacity: 0;
+    }
+
+/* Imagens e seus wrappers */
+.imagens-apresentacao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.6rem;
+}
+
+.imagem-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 27px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Texto sobre as imagens */
+.text-img {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: var(--font-secundaria);
+    font-size:40px;
+    font-weight: bold;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+/* Imagem com efeito hover */
+.imagem {
+    width: 100%;
+    height: auto;
+    border-radius: 27px;
+    transition: transform 1.2s ease;
+    transform: scale(1);
+    object-fit: cover;
+}
+
+.imagem-wrapper:hover .imagem {
+    transform: scale(1.05);
+}
+
+/* Responsividade a partir de 810px */
+@media screen and (min-width:810px) {
+    .container-apresentacao {
+        padding: 2.5rem;
+    }
+
+    .texto-apresentacao {
+        gap: 1.2rem;
+        white-space: pre-line;
+    }
+
+    .bnt-computer {
+        width: 200px;
+        margin: 0 auto;
+        padding: 1rem 1.2rem;
+        font-size: 1.2rem;
+    }
+
+    .imagens-apresentacao {
+        flex-direction: row;
+        justify-content: space-between;
+        width: auto;
+        gap: 1.2rem;
+    }
+
+    .homem + .text-img {
+        top: 8%;
+    }
+
+    .text-img {
+        font-size: 2rem;
+        z-index: 2;
+    }
+
+    .imagem-wrapper {
+        width: 100%;
+        height: 50%;
+    }
+
+    .imagem-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Gradiente nas imagens */
+    .img-women::before,
+    .img-men::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+    }
+
+    .img-women::before {
+        background: linear-gradient(to top, var(--cor-botao), transparent 50%);
+    }
+
+    .img-men::before {
+        background: linear-gradient(to bottom, var(--cor-botao), transparent 50%);
+    }
+}
+
+/* Responsividade a partir de 1300px */
+@media screen and (min-width:1300px) {
+
+    .container-apresentacao {
+        justify-content: space-around;
+        flex-direction: row;
+        padding: 80px 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .texto-apresentacao {
+        text-align: left;
+    }
+
+    .texto-apresentacao h1 {
+        font-size: 48px;
+    }
+    
+
+    .img-women {
+        transform: translateY(40px);
+    }
+
+    .img-men {
+        transform: translateY(-40px);
+    }
+    .bnt-computer {
+        width: 200px;
+        margin: 0;
+        
+    }
+}
+
+
+

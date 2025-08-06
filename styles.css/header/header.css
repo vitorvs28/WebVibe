@@ -1,0 +1,187 @@
+.rounded-20 {
+  border-radius: 20px;
+}
+.blur-glass {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Espaçamento ao redor do cabeçalho */
+.header-wrapper {
+    padding: 1rem;
+}
+
+/* Cabeçalho fixo com animação de transição */
+.header {
+    position: fixed;
+    z-index: 999;
+    top: 16px;
+    left: 12px;
+    right: 12px;
+    will-change: transform;
+    transition: all 0.3s ease;
+}
+
+/* Classe que mostra o header no topo */
+.scroll-up {
+  transform: translateY(-140%);
+  animation: desaparecerHeader 0.8s ease-out forwards;
+}
+
+/* Classe que esconde o header ao rolar para baixo */
+.scroll-down {
+  transform: translateY(0);
+  animation: aparecerHeader 0.8s ease-out forwards;
+}
+
+/* Container principal do header com visual moderno */
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.452);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.425);
+}
+
+/* Ícone do botão de menu */
+.menu-button span {
+    color: #999999;
+}
+
+/* Lista do menu mobile */
+#menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+#menu ul li {
+    padding: 8px 16px;
+}
+
+/* Estilo dos links do menu */
+.desing-text {
+    text-decoration: none;
+    color: var(--cor-font-primaria);
+}
+
+.desing-link {
+    border-radius: 8px;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover suave com fundo desfocado */
+.desing-link:hover {
+    background-color: rgba(158, 158, 158, 0.452);
+   
+}
+
+/* Estilos para header em diferentes estados */
+.header-hidden,
+.header-open {
+    display: flex;
+    padding: 0.75rem 1rem;
+    
+}
+
+.header-open {
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Controla visibilidade do menu mobile */
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.open {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Menu desktop oculto por padrão */
+#computer-menu {
+    display: none;
+}
+
+/* Tamanho da logo */
+.logo {
+    width: 8.12rem;
+}
+
+/* Layout interno do header */
+.container-header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Botão "Fale com um consultor" */
+.consultor-link {
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 0.8rem;
+    border-radius: 13px;
+    font-family: var(--font-principal);
+    color: var(--cor-fonte-botao);
+    font-weight: 600;
+    background-color: var(--cor-botao);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.consultor-link:hover {
+    background-color: #1e7fb8;
+}
+
+#consultor-link {
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Estilos para telas maiores */
+@media screen and (min-width: 1300px) {
+    .header {
+        display: flex;
+        justify-content: space-around;
+        padding: 0.5rem 1rem;
+        gap: 1rem;
+    }
+
+    #header {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        gap: 1rem;
+    }
+    
+
+    .menu-button {
+        display: none;
+    }
+
+    .container-header div {
+        flex:0.5;
+    }
+
+    #menu ul {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    #computer-menu {
+        display: flex;
+    }
+
+    #computer-menu ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+}

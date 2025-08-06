@@ -1,0 +1,80 @@
+.container {
+    display: grid;
+     padding: 2rem;
+     gap: 2rem;
+
+
+}
+.logos-empresa{
+    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    font-family:var(--font-secundaria);
+    color: var(--cor-botao);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.section-logo{
+    display: grid;
+    justify-content: space-between;
+    justify-content: center;
+    
+    
+    gap:1rem;
+
+}
+.logo-parceiros{
+     display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 0.5rem;
+  width: 100%;
+  max-width:25rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.logo-parceiros img{
+    width: 100%;
+    height: auto;
+     filter: grayscale(100%) brightness(0) invert(0.6);
+      transition: transform 0.3s ease-in-out;
+}
+.img-logo{
+    width: 40%;
+    opacity: 0;
+}
+.img-logo:hover img{
+    filter: grayscale(100%) brightness(0) invert(0.7) ;
+    transform: scale(0.75);
+}
+
+/* Responsividade a partir de 810px */
+@media screen and (min-width:810px) {
+
+.logos-empresa{
+    padding: 5rem 0 10rem;
+}
+
+.logo-parceiros{
+
+    grid-template-columns: repeat(auto-fit, minmax(80px, 2fr));
+ 
+  width: 100%;
+  max-width: 50rem;
+}}
+
+/* Responsividade a partir de 1300px */
+@media screen and (min-width:1300px) {
+    .logo-parceiros{
+
+    grid-template-columns: repeat(auto-fit, minmax(80px, 2fr));
+ 
+  width: 100%;
+  max-width:75rem;
+  
+
+
+
+}
+}

@@ -1,0 +1,300 @@
+<!-- Define o tipo de documento e linguagem -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebVibe</title>
+
+  <!-- Importa fontes do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:...&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <!--International telephone input-->
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link rel="stylesheet" href="style.css">
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+  <!-- Importa os estilos CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Cabeçalho com logo e menus -->
+  <div class="header-wrapper">
+    <header class="header scroll-up" role="navigation">
+      <div id="header" class="container-header rounded-20 blur-glass header-hidden">
+        <div>
+          <!-- Logo da marca -->
+          <a href="index.html">
+            <img src="assets/img/logo.png" alt="WebVibe Logo" class="logo" />
+          </a>
+
+          <!-- Botão do menu mobile -->
+          <button class="menu-button" id="menu-button" aria-expanded="false" aria-controls="menu">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+
+        <!-- Menu mobile -->
+        <nav id="menu" class="hidden">
+          <ul>
+            <li><a href="#" class="desing-text blur-glass desing-link">Produtos e serviços</a></li>
+            <li><a href="#" class="desing-text blur-glass desing-link">Blog e materiais</a></li>
+            <li><a href="#" class="desing-text blur-glass desing-link">Sobre a WebVibe</a></li>
+          </ul>
+        </nav>
+
+        <!-- Menu para desktop -->
+        <nav id="computer-menu">
+          <ul>
+            <li><a href="#" class="desing-text blur-glass desing-link">Produtos e serviços</a></li>
+            <li><a href="#" class="desing-text blur-glass desing-link">Blog e materiais</a></li>
+            <li><a href="#" class="desing-text blur-glass desing-link">Sobre a WebVibe</a></li>
+          </ul>
+        </nav>
+
+        <!-- Botão de ação -->
+        <a href="#" class="consultor-link" id="consultor-link">Fale com um consultor</a>
+      </div>
+    </header>
+  </div>
+
+  <!-- Seção de apresentação principal -->
+  <section class="container-apresentacao">
+    <div class="apresentacao">
+      <!-- Título e parágrafo com animação fade-in -->
+      <div class="texto-apresentacao">
+        <h1 class="aparecer">Acelere suas vendas<br> com  Soluções Digitais <br> Inteligentes</h1>
+        <p class="aparecer">A <strong style="color: var(--strong-color);">WebVibe</strong>  transforma ideias em experiências digitais marcantes.<br> Criamos sites, sistemas, marcas e estratégias sob medida<br> para fazer sua empresa crescer online com qualidade,<br> performance e inovação.</p>
+      </div>
+
+      <!-- Botão com animação -->
+      <a href="#" class="consultor-link bnt-computer aparecer" id="consultor-link">Fale Com Um Consultor</a>
+    </div>
+
+    <!-- Imagens com animações opostas -->
+    <div class="imagens-apresentacao">
+      <div class="imagem-wrapper fade-in-img-inverse img-men">
+        <img src="assets/img/HOMEM2.png" alt="imagem homem" class="imagem homem">
+        <div class="text-img"><h2>+estratégias</h2></div>
+      </div>
+
+      <div class="imagem-wrapper fade-in-img img-women">
+        <img src="assets/img/MULHER2.png" alt="imagem mulher" class="imagem mulher">
+        <div class="text-img"><h2>+vendas</h2></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container logos-empresa">
+    <h2>Empresas que inspiraram esse projeto</h2>
+    <div class="section-logo">
+        <div class="logo-parceiros">
+          <div class="img-logo aparecer-parceiros">
+             <img src="assets/linkedin-logo-2013-1.svg" alt="logo">
+          </div>
+          <div class="img-logo aparecer-parceiros">
+             <img src="assets/android-logo-2.svg" alt="logo1">
+          </div>
+          <div class="img-logo aparecer-parceiros">
+             <img src="assets/coca-cola-2021.svg" alt="logo2">
+          </div>
+          <div class="img-logo aparecer-parceiros">
+             <img src="assets/facebook-5.svg" alt="logo3">
+          </div>
+          <div class="img-logo aparecer-parceiros">
+             <img src="assets/amd-logo-pre-2013.svg" alt="logo4">
+          </div>
+          <div class="img-logo aparecer-parceiros">
+             <img src="assets/github-icon-1.svg" alt="logo5">
+          </div>
+          <div class="img-logo aparecer-parceiros">
+             <img src="assets/google-1-1.svg" alt="logo6">
+          </div>
+          <div class="img-logo aparecer-parceiros">
+             <img src="assets/google.svg" alt="logo7">
+          </div>
+        </div>
+        <div class="logo-parceiros">
+          <div class="img-logo  aparecer-parceiros">
+             <img src="assets/instagram-2016-5.svg" alt="logo">
+          </div>
+          <div class="img-logo  aparecer-parceiros">
+             <img src="assets/amd-ryzen-1.svg" alt="logo1">
+          </div>
+          <div class="img-logo  aparecer-parceiros">
+             <img src="assets/openai-logo-1.svg" alt="logo2">
+          </div>
+          <div class="img-logo aparecer-parceiros">
+             <img src="assets/microsoft-windows-22.svg" alt="logo3">
+          </div>
+          <div class="img-logo aparecer-parceiros">
+             <img src="assets/samsung-8.svg" alt="logo4">
+          </div>
+          <div class="img-logo aparecer-parceiros">
+             <img src="assets/tesla-9.svg" alt="logo5">
+          </div>
+          <div class="img-logo aparecer-parceiros">
+             <img src="assets/x-2.svg" alt="logo6">
+          </div>
+          <div class="img-logo aparecer-parceiros">
+             <img src="assets/xiaomi-4.svg" alt="logo7">
+          </div>
+        </div>
+    </div>
+  </section>
+  <section class="container-servico">
+  <div class="space">
+    <div class="servico-titulo aparecer-servico">
+      <h2>Potencialize seu negócio com <strong style="color: var(--strong-color);">nossos serviços</strong></h2>
+    </div>
+    <div class="container-servicos">
+      <div class="container-1">
+        <div class="servicos aparecer-servico">
+          <h3>Desenvolvimento de Sites e Aplicações</h3>
+          <p class="servicos-texto">Criamos soluções digitais completas e sob medida para o seu negócio. Desde sites institucionais profissionais até sistemas web personalizados e lojas virtuais modernas, entregamos plataformas otimizadas para performance, segurança, e uma navegação fluida. Nosso foco é garantir que seu site represente sua marca, funcione bem em qualquer dispositivo e seja facilmente encontrado nos mecanismos de busca.</p>
+          <div>
+            <div class="consultor-link btn-servico">
+              <p>Solicitar agora</p>
+            </div>
+          </div>
+        </div>
+        <div class="servicos aparecer-servico">
+          <h3> UX/UI Design</h3>
+          <p class="servicos-texto">Transformamos ideias em experiências. Desenvolvemos interfaces intuitivas, modernas e acessíveis, sempre pensando na usabilidade e no comportamento do usuário. Cada detalhe do layout é planejado para guiar o visitante até a conversão, seja em um clique, uma compra ou um formulário preenchido. Nosso objetivo é aliar beleza visual à eficiência estratégica.</p>
+          <div>
+            <div class="consultor-link btn-servico">
+              <p>Solicitar agora</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-1">
+        <div class="servicos aparecer-servico-2">
+          <h3> Marketing Digital e SEO</h3>
+          <p class="servicos-texto">Fazemos seu público te encontrar. Ajudamos sua empresa a ganhar visibilidade na internet com estratégias completas de SEO (otimização para motores de busca), anúncios patrocinados no Google e redes sociais, e planejamento de conteúdo. A WebVibe atua com foco em atração, conversão e retenção de clientes, ajudando você a vender mais e se destacar no ambiente digital.</p>
+          <div>
+            <div class="consultor-link btn-servico">
+              <p>Solicitar agora</p>
+            </div>
+          </div>
+        </div>
+        <div class="servicos aparecer-servico-2">
+          <h3>Manutenção e Suporte Web</h3>
+          <p class="servicos-texto">Você cuida do seu negócio, e nós cuidamos do seu site. Oferecemos suporte técnico contínuo, atualizações de segurança, correções, backups, e melhorias de performance. Garantimos que seu site esteja sempre no ar, rápido e protegido, sem dores de cabeça. Conte com a WebVibe para manter sua plataforma digital funcionando perfeitamente.</p>
+          <div>
+            <div class="consultor-link btn-servico" >
+              <p>Solicitar agora</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section class="contain-form">
+    <div class="webvibe-destaque">
+      <div class="conteudo">
+        <div>
+          <h2>Pronto para transformar sua <br><strong style="color: var(--cor-botao);">presença digital?</strong></h2>
+        </div>
+        <div>
+          <p class="form-paragrafo">Já ajudamos diversos empreendedores<br> e empresas a conquistarem uma imagem<br> profissional na internet com sites modernos,<br> rápidos e que geram resultados reais.<br> E você pode contar com a gente para:</p>
+        </div>
+        <div class="lista-form">
+          <p><strong style="color: var(--strong-color);"><span class="material-symbols-outlined check">check</span> Criar um site personalizado que valoriza sua marca;</strong></p>
+          <p style="margin-top: 1.5rem;"><strong style="color: var(--strong-color);"><span class="material-symbols-outlined check">check</span>Aumentar sua visibilidade no Google com SEO;</strong></p>
+          <p style="margin-top: 1.5rem;"><strong style="color: var(--strong-color);"><span class="material-symbols-outlined check">check</span>Gerar mais confiança com um design responsivo<br> e profissional;</strong></p>
+          <p style="margin-top: 1.5rem;"><strong style="color: var(--strong-color);"><span class="material-symbols-outlined check">check</span>Atrair e converter visitantes em clientes;</strong></p>
+          <p style="margin-top: 1.5rem;"><strong style="color: var(--strong-color);"><span class="material-symbols-outlined check">check</span>Automatizar atendimentos com formulários e<br> integrações;</strong></p>
+          <p style="margin-top: 1.5rem;"><strong style="color: var(--strong-color);"><span class="material-symbols-outlined check">check</span>E muito mais!</p>
+        </div>
+        <div>
+          <p class="form-paragrafo">Fale com a Web Vibe e descubra como podemos levar<br> sua presença online para o próximo nível.</p>
+        </div>
+      </div>
+    </div>
+    <div class="form-wrapper">
+      <div class="container-formulario">
+        <form class="formulario" id="formulario">
+          <div class="form email">
+            <label for="email">E-mail*</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail" required />
+          </div>
+
+          <div class="form nome">
+            <label for="nome">Nome*</label>
+            <input type="text" id="nome" placeholder="Seu nome" required />
+          </div>
+          <!--telefone-form-->
+          <div class="form tel">
+            <div id="phone-form" class="phone-form">
+                  <label for="phone-input">Número de Telefone</label>
+                  <div class="country-code" id="country-code">+55</div>
+                  <div class="select-wrapper">
+                      <select id="country-select" class="country-select">
+                          <!-- Opções serão preenchidas via JavaScript -->
+                      </select>
+                      
+                      <div class="phone-input-wrapper">
+                      <input 
+                          type="tel" 
+                          id="phone-input" 
+                          class="phone-input"
+                          placeholder="(XX) XXXXX-XXXX"
+                          autocomplete="tel"
+                      >
+                  </div>
+             </div>
+             
+             <div class="format-hint" id="format-hint">
+                     Formato: (XX) XXXXX-XXXX (máx. 11 dígitos)
+             </div>
+
+                    
+            <!-- Indicador de país detectado -->
+            <div id="country-detection" class="country-detection hidden">
+                <div class="detection-icon">📍</div>
+                <div class="detection-content">
+                    <div class="detection-text">Detectando sua localização...</div>
+                    <div class="detection-details"></div>
+                </div>
+            </div>
+          </div>
+           <button type="submit" id="submit-btn" class="submit-btn" >
+                    Digite um número válido
+                </button>
+    
+        </form>
+      </div>
+    </div>
+  </section>
+ 
+  
+
+  <!-- Scripts para interações e animações -->
+   <script type="module" src="script/load.js"></script>
+  <script src="script/header/scroll.js"></script>
+  <script src="script/header/header-menu.js"></script>
+  <script type="module" src="script/reusable/fade-in.js"></script>
+  <script type="module" src="script/partners.js"></script>
+  <script type="module" src="script/service.js"></script>
+  <script src="script/phone-form/countries.js"></script>
+  <script src="script/phone-form/script.js"></script>
+  <script src="script/submit.js"></script>
+  
+ 
+  
+
+</body>
+</html>
+

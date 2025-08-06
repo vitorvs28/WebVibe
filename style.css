@@ -1,0 +1,30 @@
+/* Importa outros arquivos CSS */
+@import url('styles.css/header/header.css');
+@import url('styles.css/presentation/Presentation.css');
+@import url('styles.css/animation/fade-in.css');
+@import url('styles.css/logo/logo-empre.css');
+@import url('styles.css/service.css');
+@import url("styles.css/form/form.css");
+@import url('reset.css');
+
+/* Declara variáveis globais */
+:root {
+  --font-principal: 'Inter', sans-serif;
+  --font-secundaria: 'Manrope', sans-serif;
+  --cor-font-primaria: #4A5568;
+  --cor-botao: #2D9CDB;
+  --cor-fonte-botao: #f5f5f5;
+  --strong-color:#8bb3fd;
+  --backgraud-colo-seng:#1a202c;
+  --backgraud-colo-service:#f5f8ff0a;
+  --cor-text-service:#f5f8ff;
+
+}
+
+/* Estilos base do body */
+body {
+  font-family: var(--font-principal);
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #f5f5f5;
+}

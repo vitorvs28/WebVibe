@@ -1,0 +1,80 @@
+/* Animação para imagens subindo */
+.fade-in-img {
+  opacity: 0;
+  transform: translateY(70px); /* Começa deslocado para baixo */
+  animation: aparecer 0.8s ease-out forwards;
+}
+
+/* Animação para imagens descendo */
+.fade-in-img-inverse {
+  opacity: 0;
+  transform: translateY(-70px); /* Começa deslocado para cima */
+  animation: aparecerInverse 0.8s ease-out forwards;
+}
+
+/* Animação para textos */
+.fade-in {
+  opacity: 0;
+  transform: translateY(-60px);
+  animation: aparecerApre 0.8s ease-out forwards;
+}
+
+/*Animação para logo*/
+.fade-in-logo{
+  transform: translateY(-10px); /* Começa deslocado para cima */
+  animation: aparecerApre 0.5s ease-in-out forwards;
+}
+@keyframes aparecerHeader {
+  to {
+    transform: translateY(-140%);
+  }
+}
+@keyframes desaparecerHeader {
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Define a animação de subir */
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* Define a animação de descer */
+@keyframes aparecerInverse {
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* Define a animação para texto aparecer no lugar */
+@keyframes aparecerApre {
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (min-width:1300px) {
+  /* Animação para textos */
+.fade-in {
+  opacity: 0;
+  transform: translateY(-60px);
+  animation: aparecerApre 0.8s ease-out forwards;
+}
+
+/* Define a animação de subir */
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+}
+
+}
+
+
